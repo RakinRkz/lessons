@@ -9,6 +9,12 @@ In JavaScript, a variable can be declared after it has been used.
 In other words; a variable can be used before it has been declared.
 
 
+## JavaScript Initializations are Not Hoisted
+
+JavaScript only hoists declarations, not initializations.
+
+    
+
 ## The let and const Keywords
 
 Variables defined with `let` and `const` are hoisted to the top of the block, but not  *initialized* .
@@ -32,3 +38,10 @@ Using a `const` variable before it is declared, is a syntax error, so the code w
 carName = "Volvo";
 const carName;
 ```
+
+
+## Declare Your Variables At the Top !
+
+To avoid bugs, always declare all variables at the beginning of every scope.
+
+Since this is how JavaScript interprets the code, it is always a good rule.
