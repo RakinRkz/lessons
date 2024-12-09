@@ -2,9 +2,15 @@
 
 Hoisting is JavaScript's default behavior of moving declarations to the **top of the current scope** (to the top of the current script or the current function).
 
+```js
+x = 2; // x is available here because of hoisting
+
+var x;
+```
+
 ## JavaScript Declarations are Hoisted
 
-In JavaScript, a variable can be declared after it has been used.
+In JavaScript, a variable can be declared after it has been used. (not `let`, `const`)
 
 In other words; a variable can be used before it has been declared.
 
@@ -13,7 +19,13 @@ In other words; a variable can be used before it has been declared.
 
 JavaScript only hoists declarations, not initializations.
 
-    
+```js
+console.log(x); //outputs undefined     // x is available here as undefined
+
+var x=3;
+
+console.log(x);  //outputs 3
+```
 
 ## The let and const Keywords
 
