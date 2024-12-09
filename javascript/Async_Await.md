@@ -86,3 +86,29 @@ async function kitchen(){
 
 kitchen();
 ```
+
+
+can we use Async/ Await here instead of Promise?
+
+
+No, you **cannot entirely replace Promises** when using `async/await`, because `async/await` is syntactic sugar built on top of Promises. To use `async/await`, the function being `await`-ed must return a Promise. Here's why:
+
+### Key Concepts:
+
+1. **Async functions** :
+
+* Automatically return a Promise.
+* Allow you to use `await` to pause execution until a Promise resolves or rejects.
+
+2. **`await`** :
+
+* Can only be used to wait for Promises.
+
+**Why Can't We Remove Promises?**
+
+* `setTimeout` doesn't natively support `async/await`. It uses a callback instead. To make `setTimeout` work with `await`, it must be wrapped in a Promise.
+* If you attempt to use `await` without a Promise, it won't work because `await` requires something that conforms to the Promise interface.
+
+### Summary:
+
+Even with `async/await`, Promises are still necessary to handle asynchronous operations like `setTimeout`. You cannot replace Promises, but you can simplify their usage with `async/await` for cleaner, more readable code.
