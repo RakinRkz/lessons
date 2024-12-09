@@ -1,40 +1,40 @@
 # Where to put JS
 
-- JavaScript code in HTML is inserted between `<script>` and `</script>` tags.  
-- JavaScript functions can be executed when an event occurs, like a user clicking a button.  
-- Scripts can be placed in the `<body>` or `<head>` section of an HTML page, or in external files with the .js extension.  
-- External scripts can be beneficial for reusing code in multiple web pages and improving page load speeds.  
+- JavaScript code in HTML is inserted between `<script>` and `</script>` tags.
+- JavaScript functions can be executed when an event occurs, like a user clicking a button.
+- Scripts can be placed in the `<body>` or `<head>` section of an HTML page, or in external files with the .js extension.
+- External scripts can be beneficial for reusing code in multiple web pages and improving page load speeds.
 - External scripts can be referenced in 3 ways: with a full URL, file path, or no path.
 
 # OUTPUT of JS
 
-- The page is about JavaScript display possibilities, which include:  
-  - Writing into an HTML element using `innerHTML`  
-  - Writing into the HTML output using `document.write()`  
-    - `The document.write() method should only be used for testing`  
-        
-  - Writing into an alert box using `window.alert()`  
-    - `You can skip the window keyword. In JavaScript, the window object is the global scope object. This means that variables, properties, and methods by default belong to the window object. This also means that specifying the window keyword is optional`  
-        
-  - Writing into the browser console using `console.log()`  
-- To access an HTML element, JavaScript can use the `document.getElementById(id)` method  
+- The page is about JavaScript display possibilities, which include:
+  - Writing into an HTML element using `innerHTML`
+  - Writing into the HTML output using `document.write()`
+
+    - `The document.write() method should only be used for testing`
+  - Writing into an alert box using `window.alert()`
+
+    - `You can skip the window keyword. In JavaScript, the window object is the global scope object. This means that variables, properties, and methods by default belong to the window object. This also means that specifying the window keyword is optional`
+  - Writing into the browser console using `console.log()`
+- To access an HTML element, JavaScript can use the `document.getElementById(id)` method
 - The `window.print()` method can be used in the browser to print the content of the current window
 
 # JS Statements
 
-- JavaScript statements can be grouped together in code blocks, indicated by curly brackets `{}`.  
-- Semicolons are used to separate JavaScript statements and are recommended but not required.  
-- JavaScript ignores multiple spaces and allows line breaks after operators for readability.  
-- Keywords, such as `var`, `let`, `const`, `if`, `switch`, `for`, `function`, and `return`, identify the JavaScript action to be performed.  
+- JavaScript statements can be grouped together in code blocks, indicated by curly brackets `{}`.
+- Semicolons are used to separate JavaScript statements and are recommended but not required.
+- JavaScript ignores multiple spaces and allows line breaks after operators for readability.
+- Keywords, such as `var`, `let`, `const`, `if`, `switch`, `for`, `function`, and `return`, identify the JavaScript action to be performed.
 - JavaScript keywords are reserved words and cannot be used as names for variables.
 
 # var let const
 
-|  | Scope | Redeclare | Reassign | Hoisted | Binds this |
-| :---- | :---- | :---- | :---- | :---- | :---- |
-| var | No(global) | Yes | Yes | Yes | Yes |
-| let | Yes | No | Yes | No | No |
-| const | Yes | No | No | No | No |
+|       | Scope      | Redeclare | Reassign | Hoisted | Binds this |
+| :---- | :--------- | :-------- | :------- | :------ | :--------- |
+| var   | No(global) | Yes       | Yes      | Yes     | Yes        |
+| let   | Yes        | No        | Yes      | No      | No         |
+| const | Yes        | No        | No       | No      | No         |
 
 ## What is Good?
 
@@ -62,9 +62,9 @@ Always declare a variable with const when you know that the value should not be 
 
 Use const when you declare:
 
-* A new Array  
-* A new Object  
-* A new Function  
+* A new Array
+* A new Object
+* A new Function
 * A new RegExp
 
 ---
@@ -77,15 +77,15 @@ It does not define a constant value. It defines a constant reference to a value.
 
 Because of this you can NOT:
 
-* Reassign a constant value  
-* Reassign a constant array  
-* Reassign a constant object  
-* But you CAN:Change the elements of constant array  
+* Reassign a constant value
+* Reassign a constant array
+* Reassign a constant object
+* But you CAN:Change the elements of constant array
 * Change the properties of constant object
 
 ## Hoisting
 
-Variables defined with var are hoisted to the top and can be initialized at any time.
+Variables defined with var are hoisted to the top of the scope and can be initialized at any time.
 
 Meaning: You can use the variable before it is declared
 
@@ -93,17 +93,17 @@ Meaning: You can use the variable before it is declared
 
 ## JavaScript Comparison Operators
 
-| Operator | Description |
-| :---- | :---- |
-| \== | equal to |
-| \=== | equal value and equal type |
-| \!= | not equal |
-| \!== | not equal value or not equal type |
-| \> | greater than |
-| \< | less than |
-| \>= | greater than or equal to |
-| \<= | less than or equal to |
-|  ? | ternary operator |
+| Operator | Description                       |
+| :------- | :-------------------------------- |
+| \==      | equal to                          |
+| \===     | equal value and equal type        |
+| \!=      | not equal                         |
+| \!==     | not equal value or not equal type |
+| \>       | greater than                      |
+| \<       | less than                         |
+| \>=      | greater than or equal to          |
+| \<=      | less than or equal to             |
+| ?        | ternary operator                  |
 
 If you add a number and a string, the result will be a string\!
 
@@ -111,24 +111,23 @@ If you add a number and a string, the result will be a string\!
 
 ### JavaScript has 8 Datatypes
 
-1. String  
-2. Number  
-3. Bigint  
-4. Boolean  
-5. Undefined  
-6. Null  
-7. Symbol  
-8. Object  
-   
+1. String
+2. Number
+3. Bigint
+4. Boolean
+5. Undefined
+6. Null
+7. Symbol
+8. Object
 
-The Object Datatype  
+The Object Datatype
 The object data type can contain both built-in objects, and user defined objects:
 
 Built-in object types can be:
 
 objects, arrays, dates, maps, sets, intarrays, floatarrays, promises, and more.
 
-Javascript numbers are always one type:  
+Javascript numbers are always one type:
 double (64-bit floating point).
 
 # Functions
@@ -161,8 +160,8 @@ Local variables are created when a function starts, and deleted when the functio
 
 ### How to Define a JavaScript Object
 
-* Using an Object Literal  
-* Using the new Keyword  
+* Using an Object Literal
+* Using the new Keyword
 * Using an Object Constructor
 
 ## JavaScript Object Literal
@@ -173,10 +172,10 @@ An object literal is a list of name:value pairs inside curly braces {}.
 
 Objects written as name value pairs are similar to:
 
-* Associative arrays in PHP  
-* Dictionaries in Python  
-* Hash tables in C  
-* Hash maps in Java  
+* Associative arrays in PHP
+* Dictionaries in Python
+* Hash tables in C
+* Hash maps in Java
 * Hashes in Ruby and Perl
 
 ## Accessing Object Properties
@@ -193,13 +192,13 @@ Methods are actions that can be performed on objects.
 
 Methods are function definitions stored as property values.
 
-| Property | Property Value |
-| :---- | :---- |
-| firstName | John |
-| lastName | Doe |
-| age | 50 |
-| eyeColor | blue |
-| fullName | function() {return this.firstName \+ " " \+ this.lastName;} |
+| Property  | Property Value                                             |
+| :-------- | :--------------------------------------------------------- |
+| firstName | John                                                       |
+| lastName  | Doe                                                        |
+| age       | 50                                                         |
+| eyeColor  | blue                                                       |
+| fullName  | function() {return this.firstName\+ " " \+ this.lastName;} |
 
 ## In JavaScript, Objects are King.
 
@@ -215,12 +214,12 @@ Properties can be primitive values, functions, or even other objects.
 
 In JavaScript, almost "everything" is an object.
 
-* Objects are objects  
-* Maths are objects  
-* Functions are objects  
-* Dates are objects  
-* Arrays are objects  
-* Maps are objects  
+* Objects are objects
+* Maths are objects
+* Functions are objects
+* Dates are objects
+* Arrays are objects
+* Maps are objects
 * Sets are objects
 
 All JavaScript values, except primitives, are objects.
@@ -247,11 +246,10 @@ Any changes to x will also change person.
 
 Some solutions to display JavaScript objects are:
 
-* Displaying the Object Properties by name  
-* Displaying the Object Properties in a Loop  
-* Displaying the Object using Object.values()  
+* Displaying the Object Properties by name
+* Displaying the Object Properties in a Loop
+* Displaying the Object using Object.values()
 * Displaying the Object using JSON.stringify() ✅
-
 
 # Object Constructors
 
@@ -263,15 +261,15 @@ To create an object type we use an object constructor function.
 
 It is considered good practice to name constructor functions with an upper-case first letter.
 
-Example:  
-	function Person(first, last, age, eye) {  
-  this.firstName \= first;  
-  this.lastName \= last;  
-  this.age \= age;  
-  this.eyeColor \= eye;  
-}  
-	const myFather \= new Person("John", "Doe", 50, "blue");  
-const myMother \= new Person("Sally", "Rally", 48, "green");  
+Example:
+    function Person(first, last, age, eye) {
+  this.firstName \= first;
+  this.lastName \= last;
+  this.age \= age;
+  this.eyeColor \= eye;
+}
+    const myFather\= new Person("John", "Doe", 50, "blue");
+const myMother \= new Person("Sally", "Rally", 48, "green");
 const mySister \= new Person("Anna", "Rally", 18, "green");
 
 const mySelf \= new Person("Johnny", "Rally", 22, "green");
@@ -348,14 +346,13 @@ Example:
 
 Here is a list of some common HTML events:
 
-| Event | Description |
-| :---- | :---- |
-| onchange | An HTML element has been changed |
-| onclick | The user clicks an HTML element |
-| onmouseover | The user moves the mouse over an HTML element |
-| onmouseout | The user moves the mouse away from an HTML element |
-| onkeydown | The user pushes a keyboard key |
-| onload | The browser has finished loading the page |
+| Event       | Description                                        |
+| :---------- | :------------------------------------------------- |
+| onchange    | An HTML element has been changed                   |
+| onclick     | The user clicks an HTML element                    |
+| onmouseover | The user moves the mouse over an HTML element      |
+| onmouseout  | The user moves the mouse away from an HTML element |
+| onkeydown   | The user pushes a keyboard key                     |
+| onload      | The browser has finished loading the page          |
 
 The list is much longer: [W3Schools JavaScript Reference HTML DOM Events](https://www.w3schools.com/jsref/dom_obj_event.asp).
-
