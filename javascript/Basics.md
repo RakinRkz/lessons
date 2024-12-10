@@ -356,3 +356,131 @@ Here is a list of some common HTML events:
 | onload      | The browser has finished loading the page          |
 
 The list is much longer: [W3Schools JavaScript Reference HTML DOM Events](https://www.w3schools.com/jsref/dom_obj_event.asp).
+
+
+# Arrays
+
+
+An array is a special variable, which can hold more than one value:
+
+```js
+const cars = ["Saab", "Volvo", "BMW"];
+```
+
+
+## Accessing Array Elements
+
+You access an array element by referring to the  **index number** :
+
+```js
+const cars = ["Saab", "Volvo", "BMW"];
+let car = cars[0];
+```
+
+
+## Array to string
+
+```js
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("demo").innerHTML = fruits.toString();
+//Result:
+//Banana,Orange,Apple,Mango
+```
+
+
+
+JavaScript does **not** support arrays with named indexes.
+
+In JavaScript, **arrays** always use  **numbered indexes** .
+
+
+**WARNING !!**
+If you use named indexes, JavaScript will redefine the array to an object.
+
+After that, some array methods and properties will produce  **incorrect results** .
+
+
+* [X] `array.push(element) `
+* [X] `array.unshift(element)`
+* [X] `array.pop()`
+* [X] `array.shift()`
+* [X] `array[index]`
+* [X] `array.at(-1)`
+* [X] `array.find(callback)`
+* [X] `array.findIndex(callback)`
+* [X] `array.filter(callback)`
+* [X] `array.map(callback)`
+* [X] `array.reduce(callback, initialValue)`
+* [X] `array.every(callback)`
+* [X] `array.some(callback)`
+* [X] `array.includes(value)`
+* [X] `array.indexOf(value)`
+* [X] `array.lastIndexOf(value)`
+* [X] `array.concat(array2, array3, ...)`
+* [X] `array.slice(start, end)`
+* [X] `array.splice(start, deleteCount, item1, item2, ...)`
+* [X] `array.sort(compareFunction)`
+* [X] `array.reverse()`
+* [X] `array.join(separator)`
+* [X] `string.split(separator)`
+* [X] `array.flat(depth)`
+* [X] `array.flatMap(callback)`
+* [X] `array.copyWithin(target, start, end)`
+* [X] `array.fill(value, start, end)`
+* [X] `array.keys()`
+* [X] `array.values()`
+* [X] `array.entries()`
+* [X] `array.length`
+* [X] `Array.isArray(variable)`
+* [X] `array.forEach(callback)`
+
+
+## JavaScript Array Methods and Properties
+
+| Name                                                                          | Description                                                                      |
+| ----------------------------------------------------------------------------- | -------------------------------------------------------------------------------- |
+| [[ ]](https://www.w3schools.com/jsref/jsref_array[].asp)                         | Creates a new Array                                                              |
+| [new Array()](https://www.w3schools.com/jsref/jsref_array_new.asp)               | Creates a new Array                                                              |
+| [at()](https://www.w3schools.com/jsref/jsref_array_at.asp)                       | Returns an indexed element of an array                                           |
+| [concat()](https://www.w3schools.com/jsref/jsref_concat_array.asp)               | Joins arrays and returns an array with the joined arrays                         |
+| [constructor](https://www.w3schools.com/jsref/jsref_constructor_array.asp)       | Returns the function that created the Array prototype                            |
+| [copyWithin()](https://www.w3schools.com/jsref/jsref_copywithin.asp)             | Copies array elements within the array, to and from specified positions          |
+| [entries()](https://www.w3schools.com/jsref/jsref_entries.asp)                   | Returns a key/value pair Array Iteration Object                                  |
+| [every()](https://www.w3schools.com/jsref/jsref_every.asp)                       | Checks if every element in an array pass a test                                  |
+| [fill()](https://www.w3schools.com/jsref/jsref_fill.asp)                         | Fill the elements in an array with a static value                                |
+| [filter()](https://www.w3schools.com/jsref/jsref_filter.asp)                     | Creates a new array with every element in an array that pass a test              |
+| [find()](https://www.w3schools.com/jsref/jsref_find.asp)                         | Returns the value of the first element in an array that pass a test              |
+| [findIndex()](https://www.w3schools.com/jsref/jsref_findindex.asp)               | Returns the index of the first element in an array that pass a test              |
+| [findLast()](https://www.w3schools.com/jsref/jsref_array_findlast.asp)           | Returns the value of the last element in an array that pass a test               |
+| [findLastIndex()](https://www.w3schools.com/jsref/jsref_array_findlastindex.asp) | Returns the index of the last element in an array that pass a test               |
+| [flat()](https://www.w3schools.com/jsref/jsref_array_flat.asp)                   | Concatenates sub-array elements                                                  |
+| [flatMap()](https://www.w3schools.com/jsref/jsref_array_flatmap.asp)             | Maps all array elements and creates a new flat array                             |
+| [forEach()](https://www.w3schools.com/jsref/jsref_foreach.asp)                   | Calls a function for each array element                                          |
+| [from()](https://www.w3schools.com/jsref/jsref_from.asp)                         | Creates an array from an object                                                  |
+| [includes()](https://www.w3schools.com/jsref/jsref_includes_array.asp)           | Check if an array contains the specified element                                 |
+| [indexOf()](https://www.w3schools.com/jsref/jsref_indexof_array.asp)             | Search the array for an element and returns its position                         |
+| [isArray()](https://www.w3schools.com/jsref/jsref_isarray.asp)                   | Checks whether an object is an array                                             |
+| [join()](https://www.w3schools.com/jsref/jsref_join.asp)                         | Joins all elements of an array into a string                                     |
+| [keys()](https://www.w3schools.com/jsref/jsref_keys.asp)                         | Returns a Array Iteration Object, containing the keys of the original array      |
+| [lastIndexOf()](https://www.w3schools.com/jsref/jsref_lastindexof_array.asp)     | Search the array for an element, starting at the end, and returns its position   |
+| [length](https://www.w3schools.com/jsref/jsref_length_array.asp)                 | Sets or returns the number of elements in an array                               |
+| [map()](https://www.w3schools.com/jsref/jsref_map.asp)                           | Creates a new array with the result of calling a function for each array element |
+| [of()](https://www.w3schools.com/jsref/jsref_array_of.asp)                       | Creates an array from a number of arguments                                      |
+| [pop()](https://www.w3schools.com/jsref/jsref_pop.asp)                           | Removes the last element of an array, and returns that element                   |
+| [prototype](https://www.w3schools.com/jsref/jsref_prototype_array.asp)           | Allows you to add properties and methods to an Array object                      |
+| [push()](https://www.w3schools.com/jsref/jsref_push.asp)                         | Adds new elements to the end of an array, and returns the new length             |
+| [reduce()](https://www.w3schools.com/jsref/jsref_reduce.asp)                     | Reduce the values of an array to a single value (going left-to-right)            |
+| [reduceRight()](https://www.w3schools.com/jsref/jsref_reduceright.asp)           | Reduce the values of an array to a single value (going right-to-left)            |
+| [reverse()](https://www.w3schools.com/jsref/jsref_reverse.asp)                   | Reverses the order of the elements in an array                                   |
+| [shift()](https://www.w3schools.com/jsref/jsref_shift.asp)                       | Removes the first element of an array, and returns that element                  |
+| [slice()](https://www.w3schools.com/jsref/jsref_slice_array.asp)                 | Selects a part of an array, and returns the new array                            |
+| [some()](https://www.w3schools.com/jsref/jsref_some.asp)                         | Checks if any of the elements in an array pass a test                            |
+| [sort()](https://www.w3schools.com/jsref/jsref_sort.asp)                         | Sorts the elements of an array                                                   |
+| [splice()](https://www.w3schools.com/jsref/jsref_splice.asp)                     | Adds or Removes array elements                                                   |
+| [toReversed()](https://www.w3schools.com/jsref/jsref_array_toreversed.asp)       | Reverses the order of array elements (to a new array)                            |
+| [toSorted()](https://www.w3schools.com/jsref/jsref_array_tosorted.asp)           | Sorts the elements of an array (to a new array)                                  |
+| [toSpliced()](https://www.w3schools.com/jsref/jsref_array_tospliced.asp)         | Adds or Removes array elements (to a new array)                                  |
+| [toString()](https://www.w3schools.com/jsref/jsref_tostring_array.asp)           | Converts an array to a string, and returns the result                            |
+| [unshift()](https://www.w3schools.com/jsref/jsref_unshift.asp)                   | Adds new elements to the beginning of an array, and returns the new length       |
+| [valueOf()](https://www.w3schools.com/jsref/jsref_valueof_array.asp)             | Returns the primitive value of an array                                          |
+| [with()](https://www.w3schools.com/jsref/jsref_array_with.asp)                   | Returns a new array with updated elements                                        |
